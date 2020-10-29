@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+   body {
+     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 32px;
+     margin: 0 auto;
+     background: rgb(300,0,90);
+   }
+   .timer {
+      text-align: center;
+      font-size: 60px;
+      margin-top: 0px;
+      color: white;
+      background-color: rgb(200, 38, 214);
+   }
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Countdown Timer </h1>
+<form onsubmit="timeScript">
+  <h1 style="text-align: center;"></h1>
+  <label for="tim">Select Date/Time:</label>
+  <input type="datetime-local" id="tim" name="tim" step="" ></input>
+  <input type="submit">
+</form>
+<h2 class="timer">Timer Started!!</h2>
+<script id ="timeScript" name="timeScript">
+var countDownDate, valueSpan, timeClear, now, timeLeft, days, hours, minutes, seconds;
+
+  countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+  //countDownDate= new Date(document.getElementById('tim').value).getTime();
+      var timeClear = setInterval(function() {
+      now = new Date().getTime();
+      timeLeft = countDownDate - now;
+
+      days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      hours = Math.floor(
+         (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.querySelector(".timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+      if (timeLeft < 0) {
+         clearInterval(timeClear);
+         document.querySelector(".timer").innerHTML = "Timer Finished";
+      }
+  },1000);
+
+</script>
+</body>
+</html>

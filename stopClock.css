@@ -1,0 +1,36 @@
+
+.container{
+  height: 300px;
+  width: 100%;
+}
+
+#display{
+  width: 100%;
+  font-size: 72px;
+  text-align: center;
+  margin: 0px auto;
+
+}
+
+body{
+  font-family: serif;
+  font-size: 32px;
+  margin: 0 auto;
+  background: rgb(300,0,90);
+}
+#startStop {
+    float:left;
+		font-weight:bold;
+    width:50px;
+    height:40px;
+    background-color:lightgreen;
+    margin-left:630px;
+}
+#reset {
+    float:right;
+		font-weight:bold;
+    width: 50px;
+    height:40px;
+    background-color:darkorange;
+    margin-right:630px;
+}

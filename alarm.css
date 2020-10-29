@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    padding-top:50px;
+}
+
+
+
+body {
+    border: 8px solid lightgreen;
+    border-radius: 20px;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    background: rgb(300,0,90);
+}
+
+#clock {
+    height:120px;
+    font-size: 60px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: white;
+}
+
+h2 {
+	text-align:center;
+	font-size: 20px;
+	color: lightblue;
+
+}
+
+#alarm-container {
+	text-align:center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+  color: white;
+}
+#storage {
+	 text-align:center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+  	color: darkblue;
+		font-size: 60px;
+}
+
+label {
+	display:inline-block;
+}
+
+.timeofday {
+    background-color: #eee;
+}
+
+.bigger {
+    font-weight:bold;
+    font-size: 18px;
+}
+
+
+#setButton {
+    float:left;
+		font-weight:bold;
+		width: 20%;
+		height: 40px;
+    background-color:violet;
+    margin-top:30px;
+}
+#clearButton {
+    float:right;
+		font-weight:bold;
+		width: 20%;
+		height: 40px;
+    background-color:darkorange;
+    margin-top:30px;
+}
+#result {
+		font-weight:bold;
+		width: 20%;
+		height: 40px;
+    background-color:lightgreen;
+    margin-top:30px;
+		margin-left: 150px;
+
+}
