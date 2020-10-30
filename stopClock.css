@@ -1,0 +1,53 @@
+.container {
+    height: 300px;
+    width: 100%;
+}
+
+#display {
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+p {
+    font-size: 40px;
+    align-items: center;
+}
+
+body {
+    border: 8px solid lightgreen;
+    border-radius: 20px;
+    padding: 40px;
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: rgb(300, 0, 90);
+}
+
+.timer {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    color: rgb(243, 241, 128);
+    background-color: rgb(100, 38, 214);
+}
+
+#startStop {
+    float: left;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    background-color: lightgreen;
+    margin-top: 30px;
+}
+
+#reset {
+    float: right;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    background-color: darkorange;
+    margin-top: 30px;
+}

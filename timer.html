@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' type='text/css' href='timer.css'>
+
+</head>
+
+
+
+<body>
+    <h1 style="text-align: center;">Countdown Timer </h1>
+
+    <h2 class="timer" id="timerBar">00h00m00s</h2>
+
+    <div id='timer-container'>
+        <h3>Select Time</h3>
+        <label>
+					<div>
+					<select id='timerhrs' ></select>
+					</div>
+				</label>
+        <label>
+					<div>
+					<select id='timermins' ></select>
+					</div>
+				</label>
+        <label>
+					<div>
+					<select id='timersecs' ></select>
+					</div>
+                </label>
+
+        <div>
+            <div>
+                <button id='setButton' onClick='setAction()'>Set Timer</button>
+            </div>
+            <div>
+                <button id='stopButton' onClick='stopAction()'>Stop Timer</button>
+            </div>
+        </div>
+    </div>
+    <script id="timeScript" name="timeScript" type='text/javascript' src='timer.js'>
+    </script>
+</body>
+
+</html>

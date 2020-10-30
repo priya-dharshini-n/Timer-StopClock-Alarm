@@ -1,0 +1,73 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    margin: 0 auto;
+    background: rgb(300, 0, 90);
+}
+
+.timer {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    color: rgb(243, 241, 128);
+    background-color: rgb(100, 38, 214);
+}
+
+#timer-container {
+    text-align: center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding-top: 50px;
+}
+
+p {
+    font-size: 30px;
+    align-items: center;
+}
+
+body {
+    border: 8px solid lightgreen;
+    border-radius: 20px;
+    padding: 40px;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+    background: rgb(300, 0, 90);
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: lightblue;
+}
+
+label {
+    display: inline-block;
+}
+
+#setButton {
+    float: left;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    background-color: violet;
+    margin-top: 30px;
+}
+
+#stopButton {
+    float: right;
+    font-weight: bold;
+    width: 20%;
+    height: 40px;
+    background-color: darkorange;
+    margin-top: 30px;
+}
